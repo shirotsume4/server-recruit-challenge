@@ -31,10 +31,10 @@ func AlbumToAlbumWithSingerInformation(ctx context.Context, album *model.Album, 
 	Singerinfo, err := s.singerRepositoy.Get(ctx, album.SingerID);
 	if err != nil {
 		Singerinfo := model.Singer{ID: album.SingerID, Name: "Unknown Singer"} //Singerが取得できなかったときはプレースホルダを埋める
-		albumWithSingerInformation.Singerinfo = Singerinfo
+		albumWithSingerInformation.Singerinfo = Singerinfo;
+	}else{
+		albumWithSingerInformation.Singerinfo = *Singerinfo;
 	}
-	albumWithSingerInformation.Singerinfo = *Singerinfo
-
 	return &albumWithSingerInformation
 }
 func (s *albumService) GetAlbumListService(ctx context.Context) ([]*model.AlbumWithSingerInformation, error) {
