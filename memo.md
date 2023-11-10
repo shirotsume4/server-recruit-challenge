@@ -31,6 +31,10 @@
    - {"id":1,"title":"Alice's 1st Album","singer":{"id":1,"name":"Alice"}} の形式
    - singer の中には Singer 構造体が入る
    - service は repositoryから Album を受け取って、AlbumWithSingerInformation を返すようにする
+ - 実装完了
+  - albumのserviceはsingerを見れる必要があったので、そのように変更
+  - getAllは、albumで受け取ったものを逐次変更していくように実装
+    - パフォーマンスはわからない（遅そう）
 ## 課題5
 
 - 実装についての課題点
