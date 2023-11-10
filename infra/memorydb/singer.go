@@ -5,8 +5,8 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/pulse227/server-recruit-challenge-sample/model"
-	"github.com/pulse227/server-recruit-challenge-sample/repository"
+	"server-recruit-challenge/model"
+	"server-recruit-challenge/repository"
 )
 
 type singerRepository struct {

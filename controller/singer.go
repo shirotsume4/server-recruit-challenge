@@ -7,8 +7,8 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/pulse227/server-recruit-challenge-sample/model"
-	"github.com/pulse227/server-recruit-challenge-sample/service"
+	"server-recruit-challenge/model"
+	"server-recruit-challenge/service"
 )
 
 type singerController struct {
