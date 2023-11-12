@@ -11,5 +11,5 @@ type Album struct {
 type AlbumWithSingerInformation struct {
 	ID       AlbumID  `json:"id"`
 	Title    string   `json:"title"`
-	Singerinfo Singer `json:"singer_id"` // モデル Singer の ID と紐づきます
+	Singerinfo Singer `json:"singer"` // モデル Singer オブジェクト
 }
